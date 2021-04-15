@@ -1,0 +1,30 @@
+.dropdown {
+  margin: 50px 50px 50px 50px;
+}
+
+.inner {
+  display: inline;
+  text-shadow: 2px 2px;
+
+}
+
+img {
+  padding: 1px;
+  width: 100px;
+  height: 150px;
+  margin: 5px;
+  box-shadow: 5px 5px #888888;
+}
+
+.inner :hover {
+  border: black solid 1px;
+}
+
+
+ngx-extended-pdf-viewer .thumbnail.selected > .thumbnailSelectionRing > .thumbnailImage {
+  opacity: 1;
+  border: 2px solid black;
+}
+
+
+

@@ -1,0 +1,22 @@
+/*
+!* You can add global styles to this file, and also import other style files *!
+ngx-extended-pdf-viewer .thumbnail.selected>.thumbnailSelectionRing>.thumbnailImage {
+  opacity: 1;
+  border: 2px solid black;
+}
+ngx-extended-pdf-viewer #thumbnailView {
+  position: absolute;
+   width: calc(100% - 5px)!important;
+  top: 0;
+  bottom: 0;
+  padding: 10px 30px 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+html[dir=ltr] ngx-extended-pdf-viewer #toolbarViewerRight, html[dir=rtl] ngx-extended-pdf-viewer #toolbarViewerLeft {
+  float: left !important;
+  margin-right: 4px;
+}
+
+*/

@@ -1,0 +1,49 @@
+<div class="main">
+  <div class="inner">
+    <img (click)="functionone()" src="../assets/pvimg/exampleone.png"/>
+    <img (click)="functiontwo()" src="../assets/pvimg/exampletwo.png"/>
+  </div>
+</div>
+
+<!--<form>
+  <div class="form-group">
+    <label for="sel1">Select PDF:</label>
+    <select class="form-control" (change)="selectChangeHandler($event)" id="sel1">
+      <option [value]="src">Example One PDF</option>
+      <option [value]="src2">Example Two PDF</option>
+    </select>
+  </div>
+</form>-->
+
+<!--<ngx-extended-pdf-viewer [(src)]="src"
+                         backgroundColor="#ffffff"
+
+                         [showToolbar]="true"
+                         [showSidebarButton]="false"
+                         [showFindButton]="false"
+                         [showPagingButtons]="false"
+                         [showZoomButtons]="false"
+                         [showPresentationModeButton]="false"
+                         [showOpenFileButton]="false"
+                         [showPrintButton]="false"
+                         [showDownloadButton]="true"
+                         [showSecondaryToolbarButton]="true"
+                         [showRotateButton]="false"
+                         [showHandToolButton]="false"
+                         [showScrollingButton]="false"
+                         [showSpreadButton]="false"
+                         [showPropertiesButton]="false"
+                         [height]="'100%'"
+                         [showBookmarkButton]="false"
+                         [useBrowserLocale]="true">
+</ngx-extended-pdf-viewer>-->
+
+<ngx-extended-pdf-viewer [(src)]="src"
+                         backgroundColor="#ffffff"
+                         [height]="'100%'"
+                         [showBookmarkButton]="false"
+                         (pageChange)="onEvent('pageChange', $event)"
+                         [useBrowserLocale]="true">
+</ngx-extended-pdf-viewer>
+
+
